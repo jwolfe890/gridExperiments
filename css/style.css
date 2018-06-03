@@ -5,11 +5,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 }
 
 img {
-    max-height: 80%;
-    max-width: 60%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 h1 {
@@ -17,6 +18,15 @@ h1 {
     font-size: 60px;
 }
 
+img:nth-child(1) {
+    grid-column: span 1;
+}
+
+#date {
+    text-align: center;
+    font-size: 30px;
+}
+ 
 
 
 
